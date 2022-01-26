@@ -1,12 +1,18 @@
-*{ box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: lavenderblush;
+  padding: 1.5rem;
+  margin: 20px;
 }
 
 h1, h2 {
   font-weight: bold;
   color: slateblue;
+  margin-bottom: 8px;
 }
 
 h2 {
@@ -14,9 +20,34 @@ h2 {
 }
 
 a {
-  color: rgb(30, 144, 255);
+  color: rgb(30,144,255);
+  text-decoration: none;
 }
 
-.ingredients {
-  background-color: #E6E6FA;
+.ingredienser {
+  background-color: lavender;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 20px 0;
+  width: 35%;
+}
+
+.instruktioner {
+  margin: 20px 0;
+  border: 2px solid #E6E6FA;
+  padding: 1rem;
+  border-radius: 10px;
+  width:35%;
+}
+
+img {
+  border-radius: 10px;
+  width: 30%;
+  height:auto;
+
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
 }
