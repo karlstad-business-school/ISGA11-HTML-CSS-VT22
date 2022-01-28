@@ -4,3 +4,23 @@ body {
     background-color: lightgray;
 }
 
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: thistle;
+    height: 400px;
+}
+
+ul>li {
+    border: 1px solid yellow;
+    text-align: center;
+    padding: 1rem;
+}
+
+li>a:hover {
+    color: plum;
+}
+
