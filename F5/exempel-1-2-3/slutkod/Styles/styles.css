@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|ZCOOL+KuaiLe');
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: Roboto, arial, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 300%;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+form {
+    width:100%;
+    max-width: 400px;
+    border: 1px solid silver;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.125);
+}
+
+.field {
+    margin-bottom: 1rem;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="number"], 
+select, 
+textarea {
+    display: block;
+    border: 1px solid silver;
+    border-radius: 0.25rem;
+    background: none;
+    box-shadow: none;
+
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    height: 2.5rem;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="number"]:focus, 
+select:focus, 
+textarea:focus {
+    outline: none;
+    border-color:  dodgerblue;
+    box-shadow:  0 0 0 3px rgba(30,144,255, 0.5);
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    height: auto;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius:  9999px;
+    cursor: pointer;
+
+}
+
+button:focus {
+    outline: none;
+    box-shadow:0 0 0 3px rgba(30,144,255, 0.5);
+}
+
+button:hover {
+    background-color: #006edb;
+}
+
+
+/* Överkurs nedan */
+
+input[type="checkbox"] {
+    opacity: 0;
+}
+
+input[type="checkbox"]+label::before {
+    display: inline-block;
+    width:20px;
+    height: 20px;
+    border: solid 3px deepskyblue;
+    border-radius: 3px;
+    content: '';
+}
+
+input[type="checkbox"]+label::after {
+    content: '';
+    display: inline-block;
+    height: 8px;
+    width: 12px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(-45deg);
+}
+
+input[type="checkbox"]+label {
+    position: relative;
+	padding-left: 5px;
+}
+
+input[type="checkbox"]+label::before,
+input[type="checkbox"]+label::after {
+    position: absolute;
+}
+
+input[type="checkbox"]+label::before {
+    top: -4px;
+	left: -25px;
+}
+
+input[type="checkbox"]+label::after {
+    left: -19px;
+    top:1px;
+}
+
+input[type="checkbox"] + label::after {
+    content: none;
+}
+
+input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+input[type="checkbox"]:focus + label::before {
+    outline: pink auto 2px;
+	
+}
