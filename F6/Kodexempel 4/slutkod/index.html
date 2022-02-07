@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <title>Kodexempel 3</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <h1>Hus 1</h1>
+      <div class="video">
+        <video
+          width="560"
+          height="315"
+          controls
+          loop
+          muted
+          poster="bild.jpg"
+          preload="auto">
+
+          <source src="video.mp4" type="video/mp4" />
+          <source src="video.mov" type="video/mov" />
+          Video-taggen kunde inte laddas
+        </video>
+
+
+        <audio controls autoplay loop>
+          <source src="Vatten.ogg" type="audio/ogg">
+          <source src="Vatten.mp3" type="audio/mp3">
+          Din webbläsare stöjder inte audio-taggen
+        </audio>
+
+      </div>
+    </main>
+  </body>
+</html>
