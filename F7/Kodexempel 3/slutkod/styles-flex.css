@@ -1,0 +1,44 @@
+*{
+	box-sizing: border-box;
+}
+
+#page-div{
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+header{
+	background-color: red;
+	padding: 12px;
+	width: 100%;
+}
+
+main{
+	background-color: salmon;
+	padding: 12px;
+	width: 66.666667%;
+}
+
+aside{
+	background-color: gold;
+	padding: 12px;
+	width: 33.333333%;
+}
+
+footer{
+	background-color: pink;
+	padding: 12px;
+	width: 100%
+}
+
+
+@media (max-width: 425px){
+	main{
+		width: 100%;
+	}
+	aside{
+		width: 100%;
+	}
+}

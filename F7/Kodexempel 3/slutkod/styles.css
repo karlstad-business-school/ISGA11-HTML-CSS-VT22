@@ -1,0 +1,33 @@
+*{
+	box-sizing: border-box;
+}
+
+#page-div{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header{
+	background-color: red;
+	padding: 12px;
+}
+
+main{
+	background-color: salmon;
+	padding: 12px;
+	float: left;
+	width: 66.666667%;
+}
+
+aside{
+	background-color: gold;
+	padding: 12px;
+	float: right;
+	width: 33.333333%;
+}
+
+footer{
+	background-color: pink;
+	padding: 12px;
+	clear: both;
+}
